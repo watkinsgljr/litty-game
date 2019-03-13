@@ -1,7 +1,7 @@
 
 
 // Establishing variables 
-var words = ["test", "greg", "wonderful", "foot", "slurp"];
+var words = ["KOBE", "MAGIC", "STAPLES", "FISHER", "SHAQ", "PHIL"];
 var word = words[Math.floor(Math.random() * words.length)];
 // words[1] = "love";
 console.log(words);
@@ -33,7 +33,7 @@ lettersRemainingDiv.innerHTML = lettersRemaining;
 console.log(userGuess.textContent);
 document.onkeyup = function (event) {
     console.log(event);
-    userGuess.textContent = event.key.toLowerCase();
+    userGuess.textContent = event.key.toUpperCase();
     console.log(userGuess.textContent);
 
     //Check user status

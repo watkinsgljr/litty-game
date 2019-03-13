@@ -8,7 +8,8 @@ h1, h2, h3, h4, h5, h5 {
 
 .background-image-holder {
    
-    background-size: cover;
+    background-size: contain;
+    background-color: black;
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
@@ -18,24 +19,32 @@ h1, h2, h3, h4, h5, h5 {
 }
 
 .grid-container {
-    border: 1px red solid;
+    border: 5px purple solid;
     display: grid;
     grid-template-columns: 25% 50% 25%;
     grid-template-rows: auto auto auto;
-    width: 75%;
+    width: 70%;
     margin: auto;
     height: 80%;
     position: relative;
     overflow: auto;
-    margin: 10rem auto;
+    margin: 5rem auto;
+    margin-top: 1rem;
+}
+
+#answer-bank {
+    margin: auto;
+    position: relative;
+    top: 5rem;
 }
 
 .item {
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    color: blue;
+    color: #f6b601;
     text-align: center;
+    font-family: 'Permanent Marker', 'Bubblegum Sans', cursive;
 }
 
 .item-1 {
@@ -43,15 +52,18 @@ h1, h2, h3, h4, h5, h5 {
     grid-row: 1 / span 1;
     background-size: cover;
     background-repeat: no-repeat;
-    border: solid red 1px;
+    /* border: solid purple 5px; */
   }
 
 .item-2 {
     grid-column: 1 / span 1;
-    grid-row: 2 / span 1;
-    background-size: cover;
+    grid-row: 1 / span 3;
+    background-size: 30vw 65vh;
     background-repeat: no-repeat;
-    border: solid red 1px;
+    background-position: center;
+    position: relative;
+    /* border: solid purple 5px; */
+    background-image: url(../images/Kobe-Bryant-Desktop-Widescreen.jpg);
 }
 
 .item-3 {
@@ -59,7 +71,8 @@ h1, h2, h3, h4, h5, h5 {
     grid-row: 2 / span 1;
     background-size: cover;
     background-repeat: no-repeat;
-    border: solid red 1px;
+    /* border: solid purple 5px; */
+    
 }
 
 .item-4 {
@@ -67,7 +80,7 @@ h1, h2, h3, h4, h5, h5 {
     grid-row: 2 / span 1;
     background-size: cover;
     background-repeat: no-repeat;
-    border: solid red 1px;
+    /* border: solid purple 5px; */
 }
 
 .item-5 {
@@ -75,11 +88,11 @@ h1, h2, h3, h4, h5, h5 {
     grid-row: 3 / span 1;
     background-size: cover;
     background-repeat: no-repeat;
-    border: solid red 1px;
+    /* border: solid purple 5px; */
 }
 
 .number-holder {
-    border: solid red 1px;
+    /* border: solid purple 5px; */
     height: 3rem;
     width: 3rem;
     margin: auto;
